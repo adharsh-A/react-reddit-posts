@@ -91,7 +91,7 @@ const RedditPostsViewer = () => {
       <div className="container mx-auto">
         {/* Header with Filters */}
         <div className="mb-12 flex justify-between items-center">
-          <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+          <h1 className="lg:text-4xl text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
             React Community Insights
           </h1>
           <div className="flex space-x-2">
@@ -99,7 +99,7 @@ const RedditPostsViewer = () => {
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`lg:px-4 lg:py-2 px-1.5 py-1 rounded-md lg:rounded-full text-sm font-medium transition-all duration-300 ${
                   activeFilter === filter 
                     ? 'bg-blue-600 text-white' 
                     : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
